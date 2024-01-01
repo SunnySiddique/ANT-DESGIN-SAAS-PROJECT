@@ -1,0 +1,217 @@
+:where(.css-dev-only-do-not-override-gzal6t).ant-input-affix-wrapper:focus,
+:where(
+    .css-dev-only-do-not-override-gzal6t
+  ).ant-input-affix-wrapper:focus-within {
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: 0;
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-input-affix-wrapper {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  min-width: 0;
+  padding: 4px 11px;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  line-height: 1.5714285714285714;
+  background-color: #ffffff;
+  background-image: none;
+  border-width: 1px;
+  border-style: none !important;
+  border-color: #d9d9d9;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.search-icon {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentcolor;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 16px;
+  margin-right: 8px;
+  color: rgb(148, 164, 196);
+}
+
+.User-button button {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  /* min-width: 64px; */
+  max-width: 100%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: rgb(36, 153, 239);
+  text-transform: none;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 0.6rem 1.5rem;
+  color: white;
+}
+
+.User-button button:hover {
+  background-color: rgb(26, 119, 205);
+  box-shadow: none;
+}
+
+.header-input-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 31px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .header-input {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .User-button button {
+    margin: 0 auto;
+  }
+}
+
+/* .cover-img {
+  background-image: url(../../../assets/cover-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 8vh;
+  border-radius: 8px;
+} */
+
+.profile-main-section {
+  position: relative;
+}
+
+.cover-img {
+  position: relative;
+}
+
+.cover-img::before {
+  content: "";
+  width: 100%;
+  height: 13vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+  opacity: 0.6;
+  background-color: rgb(211, 245, 254);
+  overflow: hidden;
+}
+
+.cover-img img {
+  width: 100%;
+  height: 13vh;
+  object-fit: cover;
+}
+
+/* :where(.css-dev-only-do-not-override-gzal6t).ant-card .ant-card-body {
+  padding: 0px;
+} */
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-card-bordered {
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  overflow: hidden;
+  user-select: none;
+  background-color: rgb(229, 234, 242);
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: -26%;
+  transform: translateX(-50%);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  object-fit: cover;
+  color: transparent;
+  text-indent: 10000px;
+}
+
+/* .profile-contents {
+  text-align: center;
+  margin-top: 40px;
+} */
+
+.profile-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.grading-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  align-items: center;
+}
+
+.grading-one small {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgb(148, 164, 196);
+  text-transform: none;
+  white-space: normal;
+}
+
+.grading-one h3 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  white-space: normal;
+}
+
+.grading-one {
+  text-align: center;
+}
+
+/* .gutter-m {
+  margin-bottom: 30px;
+} */

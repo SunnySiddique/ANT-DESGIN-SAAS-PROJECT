@@ -1,0 +1,604 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  color: rgb(29, 36, 56);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: rgb(243, 244, 249);
+  font-family: "Montserrat", sans-serif;
+  /* height: 100vh; */
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-layout.ant-layout-has-sider
+  > .ant-layout,
+:where(.css-dev-only-do-not-override-gzal6t).ant-layout.ant-layout-has-sider
+  > .ant-layout-content {
+  margin: 0px;
+  color: rgb(29, 36, 56);
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: rgb(243, 244, 249);
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-layout
+  .ant-layout-sider-children {
+  height: 100%;
+  margin-top: -0.1px;
+  padding-top: 0.1px;
+  background: white;
+}
+
+.all-card {
+  border-radius: 6px;
+}
+
+.section {
+  margin-top: 50px;
+}
+
+.apexcharts-xaxis-tick {
+  display: none;
+}
+
+.apexcharts-bar-shadows apexcharts-hidden-element-shown {
+  display: none;
+}
+
+.apexcharts-menu-icon {
+  display: none;
+}
+
+.ant-select-focused:where(.css-dev-only-do-not-override-gzal6t).ant-select:not(
+    .ant-select-disabled
+  ):not(.ant-select-customize-input):not(.ant-pagination-size-changer)
+  .ant-select-selector {
+  border-color: 0;
+  box-shadow: none;
+  outline: 0;
+  border: 0;
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-select-single:not(
+    .ant-select-customize-input
+  )
+  .ant-select-selector {
+  border: none;
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-select-single.ant-select-open
+  .ant-select-selection-item {
+  color: #2a2a2a;
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-layout
+  .ant-layout-sider-has-trigger {
+  max-width: 141px !important;
+  min-width: 105px !important;
+  /* width: 190px !important; */
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-layout
+  .ant-layout-sider-children {
+  position: fixed;
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-layout
+  .ant-layout-sider-trigger {
+  display: none;
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > th,
+:where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > td {
+  background: white;
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(
+    .ant-table-row-expand-icon-cell
+  ):not([colspan])::before,
+:where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > td:not(:last-child):not(.ant-table-selection-column):not(
+    .ant-table-row-expand-icon-cell
+  ):not([colspan])::before {
+  display: none;
+}
+
+/* :where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  > *:first-child {
+  border-start-start-radius: 8px;
+  border-color: white;
+} */
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > th,
+:where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > td {
+  border-bottom: none;
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper
+  .ant-table-tbody
+  > tr
+  > td {
+  transition: background 0.2s, border-color 0.2s;
+  border-bottom: none;
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper
+  .ant-table-tbody
+  > tr
+  > td {
+  line-height: 1.43;
+  display: table-cell;
+  vertical-align: inherit;
+  border-bottom: 1px solid rgb(251, 252, 253);
+  text-align: left;
+  color: rgb(29, 36, 56);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.title-table {
+  font-family: Montserrat, sans-serif;
+  line-height: 1.5rem;
+  display: table-cell;
+  vertical-align: inherit;
+  border-bottom: 1px solid rgb(251, 252, 253);
+  text-align: left;
+  color: rgb(29, 36, 56);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Your global stylesheet */
+.ant-table-tbody > tr.ant-table-row:hover > td {
+  background-color: transparent !important;
+}
+
+@media (max-width: 600px) {
+  .flex-none {
+    display: none;
+  }
+}
+
+.header {
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-image: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0px;
+  left: auto;
+  right: 0px;
+  /* color: rgb(255, 255, 255); */
+  z-index: 11;
+  box-shadow: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  backdrop-filter: blur(6px);
+  background-color: transparent;
+}
+
+.profile-content p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: none;
+  white-space: normal;
+}
+
+.profile-content small {
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: rgb(148, 164, 196);
+  text-transform: none;
+  white-space: normal;
+}
+
+.profile-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-icon svg {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentcolor;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+}
+
+.profile-content {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.post-title p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  white-space: normal;
+  margin-top: 21px;
+  margin-bottom: 22px;
+}
+
+.post-icon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 18px;
+  cursor: pointer;
+}
+
+.post-icon svg {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentcolor;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.post-icon-one span {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgb(148, 164, 196);
+  margin-left: 8px;
+  text-transform: none;
+  white-space: normal;
+}
+
+.post-icon-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-img img {
+  text-align: center;
+  object-fit: cover;
+  color: transparent;
+  text-indent: 10000px;
+  width: 40px;
+}
+
+.inputs {
+  font-family: Montserrat, sans-serif;
+  line-height: 1.4375em;
+  box-sizing: border-box;
+  position: relative;
+  cursor: text;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 36px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 13px;
+  width: 100%;
+  margin-left: 8px;
+  font-weight: 600;
+  border-radius: 8px;
+  color: rgb(29, 36, 56);
+  background-color: rgb(236, 239, 245);
+}
+
+.inputs input {
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentcolor;
+  padding: 4px 0px 5px;
+  border: 0px;
+  box-sizing: content-box;
+  background: none;
+  height: 1.4375em;
+  margin: 0px;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  min-width: 0px;
+  width: 100%;
+  animation-name: mui-auto-fill-cancel;
+  animation-duration: 10ms;
+  outline: none;
+}
+
+.input-main {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 19px;
+}
+
+.s {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidemenu {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .s {
+    display: block;
+  }
+}
+/* Add these styles to your existing CSS file */
+.sidemenu {
+  transition: width 0.3s ease;
+}
+
+.sidemenu.collapsed {
+  width: 80px; /* Set your desired collapsed width */
+}
+
+.sidemenu.expanded {
+  width: 200px; /* Set your desired expanded width */
+}
+
+.logo-img {
+  height: 33px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.User-button button {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  /* min-width: 64px; */
+  max-width: 100%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: rgb(36, 153, 239);
+  text-transform: none;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 0.6rem 1.5rem;
+  color: white;
+}
+
+.User-button button:hover {
+  background-color: rgb(26, 119, 205);
+  box-shadow: none;
+}
+
+.header-input-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 31px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .header-input {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .User-button button {
+    margin: 0 auto;
+  }
+}
+
+.header-input {
+  ont-family: Montserrat, sans-serif;
+  line-height: 1.4375em;
+  box-sizing: border-box;
+  position: relative;
+  cursor: text;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 45px;
+  font-size: 13px;
+  width: 100%;
+  max-width: 270px;
+  font-weight: 500;
+  padding: 0px 5px;
+  border-radius: 8px;
+  border: 1px solid rgb(229, 234, 242);
+  color: rgb(29, 36, 56);
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+.header-input input {
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentcolor;
+  padding: 4px 0px 5px;
+  border: 0px;
+  box-sizing: content-box;
+  background: none;
+  height: 1.4375em;
+  margin: 0px;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  min-width: 0px;
+  width: 100%;
+  animation-name: mui-auto-fill-cancel;
+  animation-duration: 10ms;
+  outline: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-drawer-left
+  > .ant-drawer-content-wrapper {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 6px 0 16px 0 rgba(0, 0, 0, 0.08),
+    3px 0 6px -4px rgba(0, 0, 0, 0.12), 9px 0 28px 8px rgba(0, 0, 0, 0.05);
+  width: 81px !important;
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-menu-light
+  .ant-menu-item-selected,
+:where(.css-dev-only-do-not-override-gzal6t).ant-menu-light
+  > .ant-menu
+  .ant-menu-item-selected {
+  background-color: transparent !important;
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-menu-light:not(
+    .ant-menu-horizontal
+  )
+  .ant-menu-item:not(.ant-menu-item-selected):hover,
+:where(.css-dev-only-do-not-override-gzal6t).ant-menu-light
+  > .ant-menu:not(.ant-menu-horizontal)
+  .ant-menu-item:not(.ant-menu-item-selected):hover {
+  background-color: transparent;
+}
+
+.logosvg {
+  width: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 23px;
+}
+
+/* Add your common styles for the SVG icon */
+:where(.css-dev-only-do-not-override-gzal6t)
+  .ant-menu
+  .ant-menu-item
+  .ant-menu-item-icon
+  svg {
+  user-select: none;
+  display: inline-block;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  fill: rgb(148, 164, 196);
+}
+
+/* Add styles for the selected state of the SVG icon */
+:where(.css-dev-only-do-not-override-gzal6t)
+  .ant-menu
+  .ant-menu-item-selected
+  .ant-menu-item-icon
+  svg {
+  fill: rgb(36, 153, 239);
+}
+
+/* Add styles for the hover state of the SVG icon (optional) */
+:where(.css-dev-only-do-not-override-gzal6t)
+  .ant-menu
+  .ant-menu-item:hover
+  .ant-menu-item-icon
+  svg {
+  fill: rgb(36, 153, 239);
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-layout .ant-layout-sider {
+  /* position: relative; */
+  min-width: 0;
+  background: transparent !important;
+  transition: all 0.2s, background 0s;
+}
+:where(.css-dev-only-do-not-override-gzal6t).ant-layout
+  .ant-layout-sider-children {
+  /* position: fixed; */
+  left: 0px;
+  width: 80px;
+  height: 100%;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 21px 1px;
+  transition: left 0.3s ease 0s;
+  z-index: 1211;
+  background-color: rgb(255, 255, 255);
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-drawer .ant-drawer-body {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  padding: 0px !important;
+  overflow: hidden !important;
+}
+
+.spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

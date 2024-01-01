@@ -1,0 +1,149 @@
+.Friends-input {
+  font-family: Montserrat, sans-serif;
+  line-height: 1.4375em;
+  box-sizing: border-box;
+  position: relative;
+  cursor: text;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 45px;
+  font-size: 13px;
+  width: 100%;
+  max-width: 270px;
+  font-weight: 500;
+  padding: 0px 1rem;
+  border-radius: 8px;
+  border: 1px solid rgb(229, 234, 242);
+  color: rgb(29, 36, 56);
+  background-color: rgb(255, 255, 255);
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.Friends-input input {
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentcolor;
+  padding: 4px 0px 5px;
+  border: 0px;
+  box-sizing: content-box;
+  background: none;
+  height: 1.4375em;
+  margin: 0px;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  min-width: 0px;
+  width: 100%;
+  animation-name: mui-auto-fill-cancel;
+  animation-duration: 10ms;
+  outline: none;
+}
+
+.search-input {
+  font-size: 18px;
+  color: gray;
+  margin-right: 6px;
+}
+
+.Friends-name p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  white-space: normal;
+}
+
+.friends-img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(211, 245, 254);
+  overflow: hidden;
+  margin: auto;
+}
+
+.friends-content p {
+  margin-bottom: 0px;
+  margin-top: 16px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  white-space: normal;
+}
+
+.friends-content small {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgb(148, 164, 196);
+  text-transform: none;
+  white-space: normal;
+}
+
+.friends-icons-main {
+}
+
+.friends-icons svg {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentcolor;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.5rem;
+}
+
+.friends-content {
+  text-align: center;
+}
+
+.friends-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.friends-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.friends-icons Button {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+  padding: 20px;
+  border-radius: 50%;
+  overflow: visible;
+  color: rgba(0, 0, 0, 0.54);
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.friends-icons Button:hover {
+  text-decoration: none;
+  background-color: transparent !important;
+}
