@@ -57,7 +57,7 @@ const items = [
   },
 ];
 
-const UserProfile = () => {
+const UserProfiles = () => {
   const [activeTab, setActiveTab] = useState("1");
   const [loading, setLoading] = useState(true);
 
@@ -127,4 +127,4 @@ const UserProfile = () => {
   );
 };
 
-export default UserProfile;
+export default UserProfiles;

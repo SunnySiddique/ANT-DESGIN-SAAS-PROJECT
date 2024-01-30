@@ -1,14 +1,23 @@
 import "./dashboard.css";
 
 import { Card, Col, Row, Select, Spin } from "antd";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { app } from "../../../../Firebase";
 import AppHeader from "../../AppHeader/AppHeader";
 import ColumanCharts from "./Columan";
 import DashboradTable from "./DashboradTable";
 import MultipleChats from "./MultipleChats";
 
+
+const auth = getAuth(app)
+
 const Dashboard = () => {
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
+  
+
   const svgIcon1 = (
     <div className="svg-icons">
       <svg
@@ -119,6 +128,17 @@ const Dashboard = () => {
 
     return () => clearTimeout(timeout);
   }, []);
+
+
+  onAuthStateChanged(auth, (user) => {
+    if(user) {
+      console.log(auth.currentUser);
+    }else{
+      navigate("/")
+    }
+  })
+  
+
   return (
     <>
     

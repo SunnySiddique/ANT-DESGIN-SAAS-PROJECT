@@ -1,8 +1,6 @@
 import {
   AppstoreAddOutlined,
   AppstoreOutlined,
-  LoginOutlined,
-  StarOutlined,
   UserAddOutlined,
   UserOutlined
 } from "@ant-design/icons";
@@ -18,7 +16,7 @@ const { Content, Sider } = Layout;
 const items = [
   {
     label: "Dashboard",
-    key: "/",
+    key: "/home",
     icon: <AppstoreAddOutlined />,
   },
   {
@@ -35,16 +33,6 @@ const items = [
     label: "Add User",
     key: "/adduser",
     icon: <UserAddOutlined />,
-  },
-  {
-    label: "Login",
-    key: "/login",
-    icon: <LoginOutlined />,
-  },
-  {
-    label: "Register",
-    key: "/register",
-    icon: <StarOutlined />,
   },
 ];
 

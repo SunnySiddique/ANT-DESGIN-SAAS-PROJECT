@@ -1,12 +1,13 @@
 import { Button } from "@mui/material";
-import './login.css';
+import "./login.css";
 
-const Buttons = () => {
+const Buttons = ({ SignWithGoogle }) => {
   return (
     <>
       <div className="google-button">
         <div className="google-button-1">
           <Button
+            onClick={SignWithGoogle}
             startIcon={
               <svg
                 className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-hjmalu"

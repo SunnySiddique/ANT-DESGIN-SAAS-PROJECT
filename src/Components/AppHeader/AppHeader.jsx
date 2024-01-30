@@ -1,23 +1,37 @@
 import {
-  AppstoreOutlined,
-  BellOutlined,
-  MenuOutlined,
+  LogoutOutlined,
+  MenuOutlined
 } from "@ant-design/icons";
-import img2 from "../../assets/001-man.svg";
 import img1 from "../../assets/usa.png";
 
+import { getAuth, signOut } from "firebase/auth";
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { app } from "../../../Firebase";
 import { Context } from "../../App";
 import "./AppHeader.css";
 
+const auth = getAuth(app)
+
+
 const AppHeader = ({ title }) => {
   const { setDrawerVisible } = useContext(Context);
-
+  const navigate = useNavigate();
   const showDrawer = () => {
     if (window.innerWidth < 768) {
       setDrawerVisible(true);
     }
   };
+
+  
+  const handleLogOut =  () => {
+    signOut(auth).then(() => {
+      navigate("/")
+    }).catch((error) => {
+      console.log(error.message);
+      
+    })
+  }
 
   return (
     <header className="header">
@@ -33,13 +47,12 @@ const AppHeader = ({ title }) => {
           </div>
           <div className="icon-two-main">
             <img className="flag" src={img1} alt="" />
-            <BellOutlined style={{ fontSize: "16px", cursor: "pointer" }} />
+            {/* <BellOutlined style={{ fontSize: "16px", cursor: "pointer" }} /> */}
 
-            <AppstoreOutlined
-              className="myCustomizeicon"
-              style={{ fontSize: "16px", cursor: "pointer" }}
-            />
-            <img className="profile" src={img2} alt="" />
+            <p>{auth.currentUser && auth.currentUser.displayName}</p>
+            <span style={{cursor: "pointer"}} onClick={handleLogOut}>
+              <LogoutOutlined />
+            </span>
           </div>
         </div>
       </nav>
