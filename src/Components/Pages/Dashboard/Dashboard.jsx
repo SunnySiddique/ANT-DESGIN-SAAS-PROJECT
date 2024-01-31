@@ -10,13 +10,11 @@ import ColumanCharts from "./Columan";
 import DashboradTable from "./DashboradTable";
 import MultipleChats from "./MultipleChats";
 
-
-const auth = getAuth(app)
+const auth = getAuth(app);
 
 const Dashboard = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
-  
 
   const svgIcon1 = (
     <div className="svg-icons">
@@ -129,150 +127,147 @@ const Dashboard = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-
   onAuthStateChanged(auth, (user) => {
-    if(user) {
+    if (user) {
       console.log(auth.currentUser);
-    }else{
-      navigate("/")
+    } else {
+      navigate("/");
     }
-  })
-  
+  });
 
   return (
     <>
-    
-    <AppHeader title="Saas" />
-    {loading ? (
-        <div className="spin" style={{padding: "20px" }}>
+      <AppHeader title="Saas" />
+      {loading ? (
+        <div className="spin" style={{ padding: "20px" }}>
           <Spin size="large" />
         </div>
       ) : (
-      <main>
-        <section className="section">
-          <Row gutter={24}>
-            <Col className="gutter-row" xs={24} sm={12} md={12} lg={6}>
-              <DashboradCard
-                icon={svgIcon1}
-                title="All Spending"
-                doralTitle="$574"
-              />
-            </Col>
-            <Col className="gutter-row" xs={24} sm={12} md={12} lg={6}>
-              <DashboradCard
-                icon={svgIcon2}
-                title="Earnings"
-                doralTitle="$521"
-              />
-            </Col>
-            <Col className="gutter-row" xs={24} sm={12} md={12} lg={6}>
-              <DashboradCard
-                icon={svgIcon3}
-                title="Weekly revenue"
-                doralTitle="$684"
-              />
-            </Col>
-            <Col className="gutter-row" xs={24} sm={12} md={12} lg={6}>
-              <DashboradCard
-                icon={svgIcon4}
-                title="New Clients"
-                doralTitle="$321"
-              />
-            </Col>
-          </Row>
-        </section>
+        <main>
+          <section className="section">
+            <Row gutter={24}>
+              <Col className="gutter-row" xs={24} sm={12} md={12} lg={6}>
+                <DashboradCard
+                  icon={svgIcon1}
+                  title="All Spending"
+                  doralTitle="$574"
+                />
+              </Col>
+              <Col className="gutter-row" xs={24} sm={12} md={12} lg={6}>
+                <DashboradCard
+                  icon={svgIcon2}
+                  title="Earnings"
+                  doralTitle="$521"
+                />
+              </Col>
+              <Col className="gutter-row" xs={24} sm={12} md={12} lg={6}>
+                <DashboradCard
+                  icon={svgIcon3}
+                  title="Weekly revenue"
+                  doralTitle="$684"
+                />
+              </Col>
+              <Col className="gutter-row" xs={24} sm={12} md={12} lg={6}>
+                <DashboradCard
+                  icon={svgIcon4}
+                  title="New Clients"
+                  doralTitle="$321"
+                />
+              </Col>
+            </Row>
+          </section>
 
-        <section>
-          <Row gutter={24}>
-            <Col xs={24} sm={24} md={16} lg={16}>
-              <Card
-                style={{
-                  borderRadius: "2px",
-                  marginBottom: "20px",
-                  height: "55vh",
-                }}
-              >
-                <div className="Total-spent">
-                  <h3>Total Spent</h3>
-                  <p>$682.5</p>
-                </div>
-                <ColumanCharts />
-              </Card>
-            </Col>
-            <Col xs={24} sm={24} md={8} lg={8}>
-              <Card
-                style={{
-                  height: "55vh",
-                  borderRadius: "2px",
-                  marginBottom: "20px",
-                }}
-              >
-                <div className="multipla-text-main">
-                  <div className="analytics-title">
-                    <p>Analytics</p>
+          <section>
+            <Row gutter={24}>
+              <Col xs={24} sm={24} md={16} lg={16}>
+                <Card
+                  style={{
+                    borderRadius: "2px",
+                    marginBottom: "20px",
+                    height: "55vh",
+                  }}
+                >
+                  <div className="Total-spent">
+                    <h3>Total Spent</h3>
+                    <p>$682.5</p>
                   </div>
-                  <div className="select">
-                    <Select
-                      defaultValue="All Weeks"
-                      options={[
-                        {
-                          value: "2 Weeks Ago",
-                          label: "2 weeks ago",
-                        },
-                        {
-                          value: "3 Weeks Ago",
-                          label: "3 weeks ago",
-                        },
-                        {
-                          value: "1 Month ago",
-                          label: "1 month ago",
-                        },
-                      ]}
-                    ></Select>
-                  </div>
-                </div>
-                <MultipleChats />
-                <div className="ball-and-text">
-                  <div className="ball-mains-gula">
-                    <div className="balls"></div>
-                    <div className="ball-text">
-                      <p>Sales</p>
+                  <ColumanCharts />
+                </Card>
+              </Col>
+              <Col xs={24} sm={24} md={8} lg={8}>
+                <Card
+                  style={{
+                    height: "55vh",
+                    borderRadius: "2px",
+                    marginBottom: "20px",
+                  }}
+                >
+                  <div className="multipla-text-main">
+                    <div className="analytics-title">
+                      <p>Analytics</p>
+                    </div>
+                    <div className="select">
+                      <Select
+                        defaultValue="All Weeks"
+                        options={[
+                          {
+                            value: "2 Weeks Ago",
+                            label: "2 weeks ago",
+                          },
+                          {
+                            value: "3 Weeks Ago",
+                            label: "3 weeks ago",
+                          },
+                          {
+                            value: "1 Month ago",
+                            label: "1 month ago",
+                          },
+                        ]}
+                      ></Select>
                     </div>
                   </div>
-                  <div className="ball-mains-gula">
-                    <div
-                      className="balls"
-                      style={{
-                        background: "rgb(255, 151, 119)",
-                        color: "rgb(255, 151, 119)",
-                      }}
-                    ></div>
-                    <div className="ball-text">
-                      <p>Orders</p>
+                  <MultipleChats />
+                  <div className="ball-and-text">
+                    <div className="ball-mains-gula">
+                      <div className="balls"></div>
+                      <div className="ball-text">
+                        <p>Sales</p>
+                      </div>
+                    </div>
+                    <div className="ball-mains-gula">
+                      <div
+                        className="balls"
+                        style={{
+                          background: "rgb(255, 151, 119)",
+                          color: "rgb(255, 151, 119)",
+                        }}
+                      ></div>
+                      <div className="ball-text">
+                        <p>Orders</p>
+                      </div>
+                    </div>
+                    <div className="ball-mains-gula">
+                      <div
+                        className="balls"
+                        style={{
+                          background: "rgb(255, 107, 147)",
+                          color: "rgb(255, 107, 147)",
+                        }}
+                      ></div>
+                      <div className="ball-text">
+                        <p>Return</p>
+                      </div>
                     </div>
                   </div>
-                  <div className="ball-mains-gula">
-                    <div
-                      className="balls"
-                      style={{
-                        background: "rgb(255, 107, 147)",
-                        color: "rgb(255, 107, 147)",
-                      }}
-                    ></div>
-                    <div className="ball-text">
-                      <p>Return</p>
-                    </div>
-                  </div>
-                </div>
-              </Card>
-            </Col>
-          </Row>
-        </section>
+                </Card>
+              </Col>
+            </Row>
+          </section>
 
-        <section>
-          <DashboradTable />
-        </section>
-      </main>
+          <section>
+            <DashboradTable />
+          </section>
+        </main>
       )}
     </>
   );

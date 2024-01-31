@@ -29,7 +29,6 @@ const AppHeader = ({ title }) => {
       navigate("/")
     }).catch((error) => {
       console.log(error.message);
-      
     })
   }
 
