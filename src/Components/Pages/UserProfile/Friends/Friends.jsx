@@ -3,9 +3,13 @@ import { Card, Col, Row } from "antd";
 import "./friends.css";
 
 import { Button } from "@mui/material";
+import { useState } from "react";
 import womanImage from "../../../../assets/SvgImage/012-woman-2.svg";
 
 const Friends = () => {
+  const [search, setSearch] = useState("");
+
+
   return (
     <main style={{ height: "82vh" }}>
       <div className="Friends-name">
@@ -13,7 +17,12 @@ const Friends = () => {
       </div>
       <div className="Friends-input">
         <SearchOutlined className="search-input" />
-        <input type="text" placeholder="Search Friends..." />
+        <input
+          type="text"
+          placeholder="Search Friends..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
       </div>
 
       <section>

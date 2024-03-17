@@ -275,7 +275,9 @@ const Dashboard = () => {
 
 function DashboradCard({ icon, title, doralTitle }) {
   return (
-    <Card className="all-card" style={{ marginBottom: "20px", width: "100%" }}>
+    <Card className="all-card" style={{ marginBottom: "20px", width: "100%" }} data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
       <div className="riuse-card-main">
         <div className="svg-icon">{icon}</div>
         <div className="card-title">

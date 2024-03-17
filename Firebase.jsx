@@ -1,14 +1,14 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAttk3H6MDvkqeRh2IPA3fXdpXbOiuurPY",
-  authDomain: "login-project-67c58.firebaseapp.com",
-  projectId: "login-project-67c58",
-  storageBucket: "login-project-67c58.appspot.com",
-  messagingSenderId: "298468587653",
-  appId: "1:298468587653:web:e8475d3832005cd46311ec"
+  apiKey: "AIzaSyDWZ6m7jAXw0kinAPNlzeS9CPquH_9nsCA",
+  authDomain: "instagram-app-3e906.firebaseapp.com",
+  projectId: "instagram-app-3e906",
+  storageBucket: "instagram-app-3e906.appspot.com",
+  messagingSenderId: "142320872150",
+  appId: "1:142320872150:web:b19c15fb74894c48957777"
 };
+
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
