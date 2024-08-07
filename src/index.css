@@ -617,3 +617,8 @@ body {
   .ant-tabs-nav-more {
   display: none !important;
 }
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-layout
+  .ant-layout-sider-children {
+  display: none !important;
+}
