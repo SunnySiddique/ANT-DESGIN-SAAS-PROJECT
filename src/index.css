@@ -35,6 +35,17 @@ body {
   background: white !important;
 }
 
+:where(.css-gzal6t).ant-layout .ant-layout-sider {
+  position: relative;
+  min-width: 0;
+  background: white !important;
+  transition: all 0.2s, background 0s;
+}
+
+:where(.css-gzal6t).ant-layout .ant-layout-sider-trigger {
+  display: none !important;
+}
+
 :where(.css-dev-only-do-not-override-gzal6t).ant-layout
   .ant-layout-sider-children
   .ant-menu.ant-menu-inline-collapsed {
