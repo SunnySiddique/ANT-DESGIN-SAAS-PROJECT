@@ -102,7 +102,7 @@ body {
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-layout
   .ant-layout-sider-children {
-  position: fixed;
+  position: fixed !important;
 }
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-layout
@@ -579,11 +579,10 @@ body {
 }
 :where(.css-dev-only-do-not-override-gzal6t).ant-layout
   .ant-layout-sider-children {
-  /* position: fixed; */
   left: 0px;
   width: 80px;
   height: 100%;
-  position: fixed;
+  position: fixed !important;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 21px 1px;
   transition: left 0.3s ease 0s;
   z-index: 1211;

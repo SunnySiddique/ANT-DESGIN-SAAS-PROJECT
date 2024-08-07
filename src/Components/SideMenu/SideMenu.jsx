@@ -2,13 +2,13 @@ import {
   AppstoreAddOutlined,
   AppstoreOutlined,
   UserAddOutlined,
-  UserOutlined
+  UserOutlined,
 } from "@ant-design/icons";
 import { Drawer, Layout, Menu } from "antd";
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Context } from "../../App";
-import logosvg from '../../assets/logo.svg';
+import logoSVG from "../../assets/logo.svg";
 import PageContent from "../PageContent/PageContent";
 
 const { Content, Sider } = Layout;
@@ -22,7 +22,7 @@ const items = [
   {
     label: "User Profile",
     key: "/userprofile",
-    icon: <UserOutlined />, 
+    icon: <UserOutlined />,
   },
   {
     label: "User Grid",
@@ -60,14 +60,14 @@ const SideMenu = () => {
       <Layout style={{ minHeight: "100vh" }}>
         <Sider collapsible collapsed breakpoint="sm" className="sidemenu">
           <div className="demo-logo-vertical">
-            <img className="logosvg" src={logosvg} alt="" />
+            <img className="logosvg" src={logoSVG} alt="" />
           </div>
           <Drawer
             placement="left"
             onClose={onClose}
             visible={drawerVisible}
             key="left"
-          > 
+          >
             <Menu
               theme="light"
               defaultSelectedKeys={["1"]}
