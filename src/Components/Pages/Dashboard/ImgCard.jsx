@@ -26,6 +26,12 @@ const ImgCard = () => {
           "$400",
           YellowImage
         )}
+        {imgCard(
+          "Nike airmax 170",
+          <Rate style={{ fontSize: "14px" }} defaultValue={5} disabled />,
+          "$400",
+          YellowImage
+        )}
       </div>
     </>
   );

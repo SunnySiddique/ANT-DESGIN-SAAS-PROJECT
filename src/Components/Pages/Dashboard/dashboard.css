@@ -275,10 +275,9 @@
 .img-card-titles p {
   font-size: 12px;
   font-weight: 500;
-  line-height: 1.5;
   text-transform: none;
   white-space: normal;
-  margin-top: 13px;
+  margin-top: 7px;
 }
 
 .img-card-titles span {

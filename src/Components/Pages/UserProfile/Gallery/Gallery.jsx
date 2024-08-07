@@ -72,13 +72,13 @@ const Gallery = () => {
       ),
       children: (
         <Row gutter={24}>
-          <Col className="gutter-row" lg={6}>
+          <Col className="gutter-row" xs={24} sm={12} md={8} lg={6}>
             <GalleryImageCard img={galleryImage1} />
           </Col>
-          <Col className="gutter-row" lg={6}>
+          <Col className="gutter-row" xs={24} sm={12} md={8} lg={6}>
             <GalleryImageCard img={galleryImage2} />
           </Col>
-          <Col className="gutter-row" lg={6}>
+          <Col className="gutter-row" xs={24} sm={12} md={8} lg={6}>
             <GalleryImageCard img={galleryImage3} />
           </Col>
         </Row>
@@ -93,10 +93,10 @@ const Gallery = () => {
       ),
       children: (
         <Row gutter={24}>
-          <Col className="gutter-row" lg={6}>
+          <Col className="gutter-row" xs={24} sm={12} md={8} lg={6}>
             <GalleryImageCard img={galleryImage3} />
           </Col>
-          <Col className="gutter-row" lg={6}>
+          <Col className="gutter-row" xs={24} sm={12} md={8} lg={6}>
             <GalleryImageCard img={galleryImage1} />
           </Col>
         </Row>
