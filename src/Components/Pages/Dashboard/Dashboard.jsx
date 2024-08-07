@@ -179,7 +179,14 @@ const Dashboard = () => {
 
           <section>
             <Row gutter={24}>
-              <Col xs={24} sm={24} md={16} lg={16}>
+              <Col
+                xs={24}
+                sm={24}
+                md={16}
+                lg={16}
+                data-aos="fade-right"
+                data-aos-easing="linear"
+              >
                 <Card
                   style={{
                     borderRadius: "2px",
@@ -193,7 +200,14 @@ const Dashboard = () => {
                   <ColumanCharts />
                 </Card>
               </Col>
-              <Col xs={24} sm={24} md={8} lg={8}>
+              <Col
+                xs={24}
+                sm={24}
+                md={8}
+                lg={8}
+                data-aos="fade-left"
+                data-aos-easing="linear"
+              >
                 <Card
                   style={{
                     height: "55vh",
@@ -263,7 +277,8 @@ const Dashboard = () => {
             </Row>
           </section>
 
-          <section>
+          <section data-aos="fade-up"
+     data-aos-duration="3000">
             <DashboradTable />
           </section>
         </main>

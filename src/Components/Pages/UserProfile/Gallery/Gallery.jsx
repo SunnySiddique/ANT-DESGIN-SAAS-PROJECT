@@ -1,4 +1,5 @@
 import { Card, Col, Image, Row, Tabs } from "antd";
+import { motion } from "framer-motion";
 import galleryImage1 from "../../../../assets/post-2.png";
 import galleryImage2 from "../../../../assets/post-3.png";
 import galleryImage3 from "../../../../assets/post-4.png";
@@ -112,9 +113,9 @@ const Gallery = () => {
       <main>
         <section>
           <Card>
-            <div className="gallery-tabs">
+            <motion.div className="gallery-tabs" layout>
               <Tabs items={items} centered onChange={onChange} />
-            </div>
+            </motion.div>
           </Card>
         </section>
       </main>
