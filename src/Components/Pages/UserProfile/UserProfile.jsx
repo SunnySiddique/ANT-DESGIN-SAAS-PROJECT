@@ -77,51 +77,49 @@ const UserProfiles = () => {
     <>
       <AppHeader title="User Profile" />
       {loading ? (
-        <div className="spin" style={{padding: "20px" }}>
+        <div className="spin" style={{ padding: "20px" }}>
           <Spin size="large" />
         </div>
       ) : (
-      <main>
-        <section style={{ marginBottom: "30px" }}>
-          <Card style={{ borderRadius: "1px" }}>
-            <div className="hill-img"></div>
-            <div className="main">
-              <div className="main-hill">
-                <div className="main-title-img">
-                  <div className="funny-img">
-                    <img src={image1} alt="" />
-                  </div>
-                  <div className="hill-title">
-                    <h5>Jason Alexander</h5>
-                    <span>UI Designer</span>
+        <main>
+          <section style={{ marginBottom: "30px" }}>
+            <Card style={{ borderRadius: "1px" }}>
+              <div className="hill-img"></div>
+              <div className="main">
+                <div className="main-hill">
+                  <div className="main-title-img">
+                    <div className="funny-img">
+                      <img src={image1} alt="" />
+                    </div>
+                    <div className="hill-title">
+                      <h5>Jason Alexander</h5>
+                      <span>UI Designer</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="tabs">
                 <Tabs defaultActiveKey="1" onChange={onChange} centered>
                   {items.map((item) => (
-                    <Tabs.TabPane centered tab={item.label} key={item.key}>
+                    <Tabs centered tab={item.label} key={item.key}>
                       {activeTab === item.key && item.children}
-                    </Tabs.TabPane>
+                    </Tabs>
                   ))}
                 </Tabs>
               </div>
-            </div>
-          </Card>
-        </section>
-
-        {activeTab === "1" && (
-          <section>
-            <PostMain />
+            </Card>
           </section>
-        )}
 
-        {activeTab === "2" && <Follower />}
+          {activeTab === "1" && (
+            <section>
+              <PostMain />
+            </section>
+          )}
 
-        {activeTab === "3" && <Friends />}
+          {activeTab === "2" && <Follower />}
 
-        {activeTab === "4" && <Gallery />}
-      </main>
+          {activeTab === "3" && <Friends />}
+
+          {activeTab === "4" && <Gallery />}
+        </main>
       )}
     </>
   );

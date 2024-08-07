@@ -585,7 +585,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 21px 1px;
   transition: left 0.3s ease 0s;
   z-index: 1211;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255) !important;
 }
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-drawer .ant-drawer-body {
@@ -602,3 +602,15 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-layout .ant-layout-sider {
+  position: relative;
+  min-width: 0;
+  background: transparent !important;
+  transition: all 0.2s, background 0s;
+}
+/* :where(.css-dev-only-do-not-override-gzal6t).ant-tabs
+  > .ant-tabs-nav
+  .ant-tabs-nav-list {
+  margin: 0 auto;
+} */

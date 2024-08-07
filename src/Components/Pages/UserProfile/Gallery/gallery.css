@@ -50,3 +50,9 @@
 .Children-main-img {
   margin-bottom: 20px; /* Adjust the value as needed to set the gap between images */
 }
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-tabs
+  > .ant-tabs-nav
+  .ant-tabs-nav-list {
+  margin: 0 auto;
+}

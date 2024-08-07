@@ -78,6 +78,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .icon-sec {
@@ -190,7 +191,6 @@
 }
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-tabs .ant-tabs-tab {
-  margin-right: 20px !important;
   padding: 0px !important;
 }
 
@@ -227,4 +227,16 @@
   padding: 0px;
   min-width: auto;
   font-size: 13px;
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-tabs-centered
+  > .ant-tabs-nav
+  .ant-tabs-nav-wrap:not([class*=".ant-tabs-nav-wrap-ping"]) {
+  justify-content: start !important;
+}
+
+@media (max-width: 600px) {
+  .main {
+    display: block;
+  }
 }
