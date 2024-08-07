@@ -12,7 +12,6 @@ body {
   line-height: 1.5;
   background-color: rgb(243, 244, 249);
   font-family: "Montserrat", sans-serif;
-  /* height: 100vh; */
 }
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-layout.ant-layout-has-sider
@@ -33,7 +32,13 @@ body {
   height: 100%;
   margin-top: -0.1px;
   padding-top: 0.1px;
-  background: white;
+  background: white !important;
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-layout
+  .ant-layout-sider-children
+  .ant-menu.ant-menu-inline-collapsed {
+  background-color: white !important;
 }
 
 .all-card {
@@ -48,7 +53,7 @@ body {
   display: none;
 }
 
-.apexcharts-bar-shadows apexcharts-hidden-element-shown {
+.apexcharts-bar-shadows .apexcharts-hidden-element-shown {
   display: none;
 }
 
@@ -70,7 +75,7 @@ body {
     .ant-select-customize-input
   )
   .ant-select-selector {
-  border: none;
+  border: none !important;
 }
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-select-single.ant-select-open
@@ -82,7 +87,6 @@ body {
   .ant-layout-sider-has-trigger {
   max-width: 141px !important;
   min-width: 105px !important;
-  /* width: 190px !important; */
 }
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-layout
@@ -92,7 +96,7 @@ body {
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-layout
   .ant-layout-sider-trigger {
-  display: none;
+  display: none !important;
 }
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper
@@ -120,16 +124,6 @@ body {
   ):not([colspan])::before {
   display: none;
 }
-
-/* :where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper
-  .ant-table-container
-  table
-  > thead
-  > tr:first-child
-  > *:first-child {
-  border-start-start-radius: 8px;
-  border-color: white;
-} */
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper
   .ant-table-thead
@@ -176,7 +170,6 @@ body {
   font-weight: 600;
 }
 
-/* Your global stylesheet */
 .ant-table-tbody > tr.ant-table-row:hover > td {
   background-color: transparent !important;
 }
@@ -199,7 +192,6 @@ body {
   top: 0px;
   left: auto;
   right: 0px;
-  /* color: rgb(255, 255, 255); */
   z-index: 11;
   box-shadow: none;
   padding-top: 1rem;
@@ -369,7 +361,6 @@ body {
     display: block;
   }
 }
-/* Add these styles to your existing CSS file */
 .sidemenu {
   transition: width 0.3s ease;
 }
@@ -585,7 +576,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 21px 1px;
   transition: left 0.3s ease 0s;
   z-index: 1211;
-  background-color: rgb(255, 255, 255) !important;
+  background-color: rgb(255, 255, 255);
 }
 
 :where(.css-dev-only-do-not-override-gzal6t).ant-drawer .ant-drawer-body {
@@ -609,8 +600,9 @@ body {
   background: transparent !important;
   transition: all 0.2s, background 0s;
 }
-/* :where(.css-dev-only-do-not-override-gzal6t).ant-tabs
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-tabs
   > .ant-tabs-nav
-  .ant-tabs-nav-list {
-  margin: 0 auto;
-} */
+  .ant-tabs-nav-more {
+  display: none !important;
+}
